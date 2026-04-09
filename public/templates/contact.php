@@ -71,7 +71,14 @@ include 'partials/header.php';
 						</div>
 					</form>
           <?php
-            saveMessage();
+            if($_SERVER['REQUEST_METHOD']==='POST'){
+              $db = new Database();
+              $connection = $db->getConnection();
+
+              $form = new Contact($connection,$_POST);
+              $form->store();
+
+            }
           ?>
 				</div><!--contact-information-->
 

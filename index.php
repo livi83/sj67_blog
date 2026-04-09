@@ -1,7 +1,8 @@
 <?php
 
-include 'app/functions.php';
+include 'app/core/Redirect.php';
 
-redirect('public/templates/home.php');  
+$redirect = new Redirect('public/templates/home.php');
+$redirect->redirect(); 
 
 ?>

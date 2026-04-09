@@ -1,12 +1,15 @@
 <?php
-	require_once '../../app/functions.php';
+	require_once '../../app/core/Helper.php';
+	require_once '../../app/core/Database.php';
+	require_once '../../app/models/Contact.php';
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo getTitle(); ?></title>
+	<title><?php
+		echo Helper::getPageTitle();
+	?></title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
