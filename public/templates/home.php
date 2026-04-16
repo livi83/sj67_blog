@@ -1,6 +1,5 @@
 <?php
-include_once 'partials/header.php';
-
+	include_once 'partials/header.php';
 ?>
 <section id="slider" class="position-relative padding-xlarge no-padding-top">
 
